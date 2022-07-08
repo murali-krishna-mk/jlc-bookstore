@@ -2,7 +2,7 @@
 <h1>This is my JLC BookStore Application</h1>
 
 <h2>This Application is used to give demo on CI/CD Pipeline </h2>
-<h2> Following Skills are used in the Project</h2>
+<h2> Following Skills are used to Implement CI/CD Pipeline </h2>
 <br/>
 <h2> 1. GitHub </h2>
 <h2> 2. Jenkins </h2>
