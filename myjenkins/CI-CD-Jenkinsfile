@@ -27,7 +27,7 @@ pipeline {
                script {         
                  def customImage = docker.build('dandesacademy/jlc-bookstore', "./mydocker")
                  docker.withRegistry('https://registry-1.docker.io/v2/', 'mydockerhub') {
-                 customImage.push("5.1.0")
+                 customImage.push("5.3.0")
                  }                     
            }
         }
