@@ -6,10 +6,7 @@
 
 <body>
 	
-<div class="card-header">
-    <h2 class="text-center">Welcome to JLC Bookstore - V-5.3.0</h2>
-    <h4 class="text-center"> Best Books and Best Videos</h4>
-  </div>
+<jsp:include page="myheader.jsp"/>
 	
   <br/><br/>
 	<div class="container" align="center">
