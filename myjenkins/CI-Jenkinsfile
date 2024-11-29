@@ -1,8 +1,8 @@
 pipeline {
   agent any
     tools {
-      maven 'mymaven3'
-      jdk 'myjdk8'
+      maven 'mymvn'
+      jdk 'myjdk17'
     }
 
     stages {      
@@ -24,8 +24,8 @@ pipeline {
         stage('3. Build and Push docker image') {
            steps {
                script {         
-                 def customImage = docker.build('dandesacademy/jlc-bookstore', "./mydocker")
-                 docker.withRegistry('https://registry-1.docker.io/v2/', 'mydockerhub') {
+                 def customImage = docker.build('muralirepo/jlc-bookstore', "./mydocker")
+                 docker.withRegistry('https://registry-1.docker.io/v2/', 'myrepohub') {
                  customImage.push("5.1.0")
                  }                     
            }
